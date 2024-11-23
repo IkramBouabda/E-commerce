@@ -1,0 +1,352 @@
+body{
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(191, 197, 241, 0.8);
+}
+
+ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+}
+#namee{
+    display: flex;
+    justify-content: left;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #041422; /* Couleur principale */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#logo a {
+    color: gold;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 2px 5px rgba(255, 215, 0, 0.6);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a,nav li {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: gold;
+    color: #041422;
+    transform: scale(1.1); /* Petit effet d'agrandissement */
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);
+}
+
+#tel{
+    text-decoration: underline;
+}
+
+/* Responsive Menu */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+
+
+
+.pc1 {
+    width: 100%; /* L'image occupe 100% de la largeur du div */
+    max-width: 500px; /* L'image ne dépassera pas 500px de largeur */
+    height: auto; /* Maintient les proportions de l'image */
+    border-radius: 8px;
+    display: block; /* S'assure que l'image est un bloc */
+    margin: 0 auto; /* Centre l'image horizontalement */
+}
+
+#product{
+    font-family: "Roboto", sans-serif;
+   /* height: 700px;
+   background-color: #041422;
+    background-position: center;
+    background-size: cover;*/
+}
+
+#laptop {
+    display: flex; /* Active le mode flexbox */
+    justify-content: space-between; /* Répartit les divs avec des espaces égaux */
+    align-items: flex-start; /* Aligne les divs en haut */
+    flex-wrap: wrap; /* Permet aux divs de passer à la ligne si nécessaire */
+    gap: 5px; /* Ajoute de l'espace entre les divs */
+    padding:0 20px; /* Ajoute un peu d'espace intérieur */
+    background-color: rgba(191, 197, 241, 0.8); /* Conserve le style existant */
+    box-shadow: 2px 4px 8px rgb(245, 239, 239); /* Style existant */
+    border-radius: 8px; /* Style existant */
+}
+
+
+#laptop1, #laptop2, #laptop3, #laptop4, #laptop5 {
+    width: 18%; /* Chaque div occupe 18% de la largeur du conteneur */
+    text-align: center; /* Centre le contenu dans chaque div */
+    background-color: #041422; /* Exemple pour personnaliser chaque div */
+    color: white; /* Texte lisible */
+    padding: 10px; /* Ajoute de l'espace interne */
+    border-radius: 8px; /* Arrondi des coins */
+}
+
+
+#laptop1 h1,#laptop2 h1,#laptop3 h1,#laptop4 h1,#laptop5 h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    padding-top: 150px;
+    margin: 0; /* Enlève les marges pour coller le titre en haut */
+}
+
+#laptop1 p,#laptop2 p,#laptop3 p,#laptop4 p,#laptop5 p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+#product-name {
+    text-align: left; 
+    font-size: 36px; 
+    font-weight: bold; 
+    color: #ffffff; 
+    margin-top: 20px; /* Ajoute un espace au-dessus */
+    margin-bottom: 20px; /* Facultatif : espace en dessous */
+    padding: 10px;
+    text-decoration: underline;
+}
+#product-name :hover{
+    color: rgb(180, 164, 164);
+}
+button{
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+   /* color: #041422;*/
+    background-color: gold;
+}
+button:hover{
+    color:rgba(83, 77, 80, 0.51);
+}
+
+#keyboard {
+    display: flex; /* Active le mode flexbox */
+    justify-content: space-between; /* Répartit les divs avec des espaces égaux */
+    align-items: flex-start; /* Aligne les divs en haut */
+    flex-wrap: wrap; /* Permet aux divs de passer à la ligne si nécessaire */
+    gap: 5px; /* Ajoute de l'espace entre les divs */
+    padding: 20px; /* Ajoute un peu d'espace intérieur */
+    background-color: rgba(191, 197, 241, 0.8); /* Conserve le style existant */
+    box-shadow: 2px 4px 8px rgb(245, 239, 239); /* Style existant */
+    border-radius: 8px; /* Style existant */
+}
+
+
+#keyboard1, #keyboard2, #keyboard3, #keyboard4, #keyboard5 {
+    width: 18%; /* Chaque div occupe 18% de la largeur du conteneur */
+    text-align: center; /* Centre le contenu dans chaque div */
+    background-color: #041422; /* Exemple pour personnaliser chaque div */
+    color: white; /* Texte lisible */
+    padding: 10px; /* Ajoute de l'espace interne */
+    border-radius: 8px; /* Arrondi des coins */
+}
+
+
+#keyboard1 h1,#keyboard2 h1,#keyboard3 h1,#keyboard4 h1,#keyboard5 h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    margin: 0; /* Enlève les marges pour coller le titre en haut */
+}
+
+#keyboard1 p,#keyboard2 p,#keyboard3 p,#keyboard4 p,#keyboard5 p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+#mouse {
+    display: flex; /* Active le mode flexbox */
+    justify-content: space-between; /* Répartit les divs avec des espaces égaux */
+    align-items: flex-start; /* Aligne les divs en haut */
+    flex-wrap: wrap; /* Permet aux divs de passer à la ligne si nécessaire */
+    gap: 5px; /* Ajoute de l'espace entre les divs */
+    padding: 20px; /* Ajoute un peu d'espace intérieur */
+    background-color: rgba(191, 197, 241, 0.8); /* Conserve le style existant */
+    box-shadow: 2px 4px 8px rgb(245, 239, 239); /* Style existant */
+    border-radius: 8px; /* Style existant */
+}
+
+
+#mouse1, #mouse2, #mouse3, #mouse4, #mouse5 {
+    width: 18%; /* Chaque div occupe 18% de la largeur du conteneur */
+    text-align: center; /* Centre le contenu dans chaque div */
+    background-color: #041422; /* Exemple pour personnaliser chaque div */
+    color: white; /* Texte lisible */
+    padding: 10px; /* Ajoute de l'espace interne */
+    border-radius: 8px; /* Arrondi des coins */
+}
+
+
+#mouse1 h1,#mouse2 h1,#mouse3 h1,#mouse4 h1,#mouse5 h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    margin: 0; /* Enlève les marges pour coller le titre en haut */
+}
+
+#mouse1 p,#mouse2 p,#mouse3 p,#mouse4 p,#mouse5 p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+#headphone {
+    display: flex; /* Active le mode flexbox */
+    justify-content: space-between; /* Répartit les divs avec des espaces égaux */
+    align-items: flex-start; /* Aligne les divs en haut */
+    flex-wrap: wrap; /* Permet aux divs de passer à la ligne si nécessaire */
+    gap: 5px; /* Ajoute de l'espace entre les divs */
+    padding: 20px; /* Ajoute un peu d'espace intérieur */
+    background-color: rgba(191, 197, 241, 0.8); /* Conserve le style existant */
+    box-shadow: 2px 4px 8px rgb(245, 239, 239); /* Style existant */
+    border-radius: 8px; /* Style existant */
+}
+
+
+#headphone1, #headphone2, #headphone3, #headphone4, #headphone5 {
+    width: 18%; /* Chaque div occupe 18% de la largeur du conteneur */
+    text-align: center; /* Centre le contenu dans chaque div */
+    background-color: #041422; /* Exemple pour personnaliser chaque div */
+    color: white; /* Texte lisible */
+    padding: 10px; /* Ajoute de l'espace interne */
+    border-radius: 8px; /* Arrondi des coins */
+}
+
+
+#headphone1 h1,#headphone2 h1,#headphone3 h1,#headphone4 h1,#headphone5 h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    margin: 0; /* Enlève les marges pour coller le titre en haut */
+}
+
+#headphone1 p,#headphone2 p,#headphone3 p,#headphone4 p,#headphone5 p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+#laptop, #keyboard, #mouse, #headphone {
+    margin-top: 0; /* Supprime les marges extérieures */
+}
+#laptop h1, #keyboard h1, #mouse h1, #headphone h1 {
+    margin: 0; /* Supprime les marges */
+    padding: 0; /* Supprime les espacements internes */
+}
+
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgba(204, 203, 213, 0.51);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+ .container h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+ .container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+ .container table th,.container table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+ .container table th {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .total {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+ .container button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #669fdb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+.container  button:hover {
+    background-color: #0056b3;
+  }
+  
+ .container button#viderPanier {
+    background-color: #d60f0f;
+  }
+  
+ .container button#viderPanier:hover {
+    background-color: #d93636;
+  }

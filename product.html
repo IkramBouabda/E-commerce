@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#">IKRAMINA'S.DZ</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Eamil:ikrambouabda14@gmail.com</a></li>
+                <li id="tel">Tel:0793647852</li>
+                <li><a href="#">Produits</a></li>
+                <li><a href="#panier">Panier</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="product">
+            <h1 id="product-name">Laptops</h1>
+            <h1 id="product-name">Laptops</h1>
+            <div id="laptop">
+                <div id="laptop1">
+                   <h1>HP</h1> 
+                   <img src="pc1.jpg" alt="Description de l'image" class="pc1">
+                   <p>HP 15 inch Laptop, HD Display, 13th Generation Intel Core i5-1334U, 8 GB RAM, 512 GB SSD, Intel Iris Xe Graphics, Windows 11 Home, 15-fd0012nr (2024)</p>
+                   <p>Price=487$</p>
+                   <button onclick="ajouterProduit('Laptop:HP', 487, 4)" class="add-to-cart" data-name="HP" data-price="487">Ajouter au panier</button>
+                </div>
+                <div id="laptop2">
+                    <h1>Dell</h1> 
+                   <img src="pc2.webp" alt="Description de l'image" class="pc1">
+                   <p>Dell Inspiron 16 Plus 7640 Laptop - 16.0-inch 16:10 2.5K Display, Intel Core i7-13620H Processor, 16GB LPDDR5 RAM, 1TB SSD, Intel UHD Graphics, Windows 11 Home, Onsite & Migrate Service - Ice Blue</p>
+                   <p>price=859$</p>
+                   <button onclick="ajouterProduit('Laptop:Dell', 859, 3)" class="add-to-cart" data-name="Dell" data-price="859">Ajouter au panier</button>
+                </div>
+                <div id="laptop3">
+                    <h1>Lenovo</h1> 
+                   <img src="pc3.jpg" alt="Description de l'image" class="pc1">
+                   <p>Lenovo IdeaPad Slim 3i - 2024 - Lightweight Laptop - Rapid Charge Boost - 14" FHD IPS Display - 16GB Memory - 512GB SSD Storage - Intel® Core™ i7-13620H - Windows 11 HomeArctic Grey </p>
+                   <p>price=590</p>
+                   <button onclick="ajouterProduit('Laptop:Lenovo', 590, 2)" class="add-to-cart" data-name="Lenovo" data-price="590">Ajouter au panier</button>
+                </div>
+                <div id="laptop4">
+                    <h1>ASUS</h1> 
+                   <img src="pc4.jpg" alt="Description de l'image" class="pc1">
+                   <p>ASUS 2024 Zenbook S 13 OLED Laptop, 13.3” OLED 3K 60Hz Display, Intel Evo Certified, Intel Core Ultra 7 155U CPU, Intel Graphics, 16GB RAM, 512GB SSD, Windows 11 Home, Basalt Gray, UX5304MA-ES71</p>
+                   <p>price=1199$</p>
+                   <button onclick="ajouterProduit('Laptop:Asus', 1199, 3)" class="add-to-cart" data-name="Asus" data-price="1199">Ajouter au panier</button>
+                </div>
+                <div id="laptop5">
+                    <h1>Acer</h1> 
+                   <img src="pc5.webp" alt="Description de l'image" class="pc1">
+                   <p>Acer Swift Go 16 Intel Evo Edition Laptop | 16" 1920 x 1200 Touch Display | Unlock AI Experiences | Intel Core Ultra 9 Processor 185H | Intel ARC | 16GB LPDDR5X | 1TB SSD | Wi-Fi 7 | SFG16-72T-95Z6 </p>
+                   <p>price=949$</p>
+                   <button onclick="ajouterProduit('Laptop:Acer', 949, 3)" class="add-to-cart" data-name="Acer" data-price="949">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <h1 id="product-name">Keyboard</h1>
+            <div id="keyboard">
+                <div id="keyboard1">
+                   <h1></h1> 
+                   <img src="keyboard1.jpg" alt="Description de l'image" class="pc1">
+                   <p>Logitech K400 Plus Wireless Touch TV Keyboard with Easy Media Control and Built-in Touchpad, HTPC Keyboard for PC-Connected TV, Windows, Android, Chrome OS, Laptop, Tablet - Black</p>
+                   <p>price=$47.38</p>
+                   <button onclick="ajouterProduit('Keyboard:Logitech K400 Plus', 47.38, 4)" class="add-to-cart" data-name="Logitech K400 Plus" data-price="47.38">Ajouter au panier</button>
+                </div>
+                <div id="keyboard2">
+                    <h1></h1> 
+                   <img src="keyboard2.jpg" alt="Description de l'image" class="pc1">
+                   <p>Logitech Pebble Keys 2 K380s, Multi-Device Bluetooth Wireless Keyboard with Customisable Shortcuts, Slim and Portable, Easy-Switch for Windows, macOS, iPadOS, Android, Chrome OS - Tonal Rose</p>
+                   <p>price=$37.87</p>
+                   <button onclick="ajouterProduit('Keyboard:Logitech Pebble Keys 2 K380s', 37.87, 3)" class="add-to-cart" data-name="Logitech Pebble Keys 2 K380s" data-price="37.87">Ajouter au panier</button>
+                </div>
+                <div id="keyboard3">
+                    <h1></h1> 
+                   <img src="keyboard3.jpg" alt="Description de l'image" class="pc1">
+                   <p>Pebble Magic pad 2.4 GHz Wireless, Round Keycaps, Soft Keys, Bluetooth V5.0, Built in Touch Pad, Compact Ergonomic Design</p>
+                   <p>price=$23.69</p>
+                   <button onclick="ajouterProduit('Keyboard:Pebble Magic pad 2.4 GHz Wireless', 23.69, 4)" class="add-to-cart" data-name="Pebble Magic pad 2.4 GHz Wireless" data-price="23.69">Ajouter au panier</button>
+                </div>
+                <div id="keyboard4">
+                    <h1></h1> 
+                   <img src="keyboard4.jpg" alt="Description de l'image" class="pc1">
+                   <p>E9050L Bluetooth Wireless Multi-Device Keyboard(4 Devices), Rechargeable, Led Indicators, Ultra-thin, Ergonomic, Compatible with Windows, iOS, Android, Tablets, Smartphones - White, 3-Year Warranty </p>
+                   <p>price=$29.62</p>
+                   <button onclick="ajouterProduit('Keyboard:E9050L Bluetooth Wireless Multi-Device', 29.62, 3)" class="add-to-cart" data-name="E9050L Bluetooth Wireless Multi-Device" data-price="29.62">Ajouter au panier</button>
+                </div>
+                <div id="keyboard5">
+                    <h1></h1> 
+                   <img src="keyboard5.jpg" alt="Description de l'image" class="pc1">
+                   <p>Wireless Keyboard with Bluetooth + 2.4 GHz USB Receiver (Dual Connectivity), Pair 3 Devices Max, Multimedia Hotkeys, for Laptop, PC, Smartphone, Tablet (Green) </p>
+                   <p>price=$10.06</p>
+                   <button onclick="ajouterProduit('Keyboard:Wireless Keyboard with Bluetooth + 2.4 ', 10.06, 4)" class="add-to-cart" data-name="Wireless Keyboard with Bluetooth + 2.4 GHz" data-price="10.06">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <h1 id="product-name">Mouse</h1>
+            <div id="mouse">
+                <div id="mouse1">
+                   <h1></h1> 
+                   <img src="mouse1.jpg" alt="Description de l'image" class="pc1">
+                   <p>EvoFox Blaze Programmable Gaming Mouse |8 Fully Programmable Buttons| Ultra-responsive 7000fps | Gaming Grade Sensitive DPI Upto 12800 |RGB Lights with Music sync Mode | Windows Software</p>
+                   <p>price=$7.30</p>
+                   <button onclick="ajouterProduit('Mouse:EvoFox Blaze Programmable Gaming Mouse ', 7.30, 5)" class="add-to-cart" data-name="EvoFox Blaze Programmable Gaming Mouse" data-price="7.30">Ajouter au panier</button>
+                </div>
+                <div id="mouse2">
+                    <h1></h1> 
+                   <img src="mouse2.jpg" alt="Description de l'image" class="pc1">
+                   <p>Logitech M186 Wireless Mouse, 2.4GHz with USB Mini Receiver, 12-Month Battery Life, 1000 DPI Optical Tracking, Ambidextrous, Compatible with PC, Mac, Laptop</p>
+                   <p>price= $7.10</p>
+                   <button onclick="ajouterProduit('Mouse:Logitech M186 Wireless Mouse', 7.10, 6)" class="add-to-cart" data-name="mouse2" data-price="7.10">Ajouter au panier</button>
+                </div>
+                <div id="mouse3">
+                    <h1></h1> 
+                   <img src="mouse3.jpg" alt="Description de l'image" class="pc1">
+                   <p>ZEBRONICS Zeb-Jaguar Wireless Mouse, 2.4GHz with USB Nano Receiver, High Precision Optical Tracking, 4 Buttons, Plug & Play, Ambidextrous, for PC/Mac/Laptop (Light Blue+Grey)</p>
+                   <p>price=$3.54</p>
+                   <button onclick="ajouterProduit('Mouse:ZEBRONICS Zeb-Jaguar Wireless Mouse', 3.54, 4)" class="add-to-cart" data-name="mouse3" data-price="3.54">Ajouter au panier</button>
+                </div>
+                <div id="mouse4">
+                    <h1></h1> 
+                   <img src="mouse4.jpg" alt="Description de l'image" class="pc1">
+                   <p>EvoFox Blaze Programmable Gaming Mouse with 500Hz Polling Rate | Ultra-Responsive 7000fps | Gaming Grade Sensitive DPI Upto 12800 | RGB Lights with Music sync Mode | Windows SoftwareEvoFox Blaze Programmable Gaming Mouse with 500Hz Polling Rate | Ultra-Responsive 7000fps | Gaming Grade Sensitive DPI Upto 12800 | RGB Lights with Music sync Mode | Windows Software</p>
+                   <p>price=$7.99</p>
+                   <button onclick="ajouterProduit('Mouse:EvoFox Blaze Programmable Gaming Mouse', 7.99, 5)" class="add-to-cart" data-name="mouse4" data-price="7.99">Ajouter au panier</button>
+                </div>
+                <div id="mouse5">
+                    <h1></h1> 
+                   <img src="mouse5.jpg" alt="Description de l'image" class="pc1">
+                   <p>ZEBRONICS Newly Launched Blanc Slim Wireless Mouse with Rechargeable Battery, BT + 2.4GHz, 4 Buttons, 800/1200/1600 DPI, Silent Operation, Multicolor LED Lights</p>
+                   <p>price=$5.46</p>
+                   <button onclick="ajouterProduit('Mouse:ZEBRONICS Newly Launched Blanc Slim Wireless Mouse', 5.46, 5)" class="add-to-cart" data-name="mouse5" data-price="5.46">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <h1 id="product-name">Headphones</h1>
+            <div id="headphone">
+                <div id="mouse1">
+                   <h1></h1> 
+                   <img src="headphone1.jpg" alt="Description de l'image" class="pc1">
+                   <p>boAt Rockerz 450 Bluetooth On Ear Headphones with Mic, Upto 15 Hours Playback, 40MM Drivers, Padded Ear Cushions, Integrated Controls and Dual Modes(Luscious Black) </p>
+                   <p>price=$17.75</p>
+                   <button onclick="ajouterProduit('Headphone:boAt Rockerz 450 Bluetooth On Ear Headphones with Mic', 17.57, 2)" class="add-to-cart" data-name="headphone1" data-price="17.75">Ajouter au panier</button>
+                </div>
+                <div id="headphone2">
+                    <h1></h1> 
+                   <img src="headphone2.jpg" alt="Description de l'image" class="pc1">
+                   <p>Sony WH-CH720N - Casque Bluetooth sans Fil à réduction de Bruit - Micro intégré - jusqu'à 35 Heures d'autonomie et Charge Rapide - Noir</p>
+                   <p>price=$95.39</p>
+                   <button onclick="ajouterProduit('Headphone:Sony WH-CH720N - Casque Bluetooth sans Fil', 95.39, 4)" class="add-to-cart" data-name="headphone2" data-price="95.39">Ajouter au panier</button>
+                </div>
+                <div id="headphone3">
+                    <h1></h1> 
+                   <img src="headphone3.jpg" alt="Description de l'image" class="pc1">
+                   <p>Sennheiser HD 400S Casque Circum-Auriculaire à Télécommande Intelligente - Noir</p>
+                   <p>price=$71.56</p>
+                   <button onclick="ajouterProduit('Headphone:Sennheiser HD 400S Casque ', 71.56, 6)" class="add-to-cart" data-name="headphone3" data-price="71.56">Ajouter au panier</button>
+                </div>
+                <div id="headphone4">
+                    <h1></h1> 
+                   <img src="headphone4.jpg" alt="Description de l'image" class="pc1">
+                   <p>JBL Tune 520BT, casque audio sans fil, léger et confortable, Bluetooth 5.3, autonomie jusqu'à 57 h, charge rapide, son JBL Pure Bass, violet</p>
+                   <p>price=$42.39</p>
+                   <button onclick="ajouterProduit('Headphone:JBL Tune 520BT, casque audio sans fil', 42.39, 1)" class="add-to-cart" data-name="headphone4" data-price="42.39">Ajouter au panier</button>
+                </div>
+                <div id="headphone5">
+                    <h1></h1> 
+                   <img src="headphone5.jpg" alt="Description de l'image" class="pc1">
+                   <p>HyperX Cloud II – Casque Gaming avec Micro pour PC/PS4/Mac, Rouge</p>
+                   <p>price=$102.2</p>
+                   <button onclick="ajouterProduit('Headphone:HyperX Cloud II – Casque Gaming ', 102.2, 3)" class="add-to-cart" data-name="headphone5" data-price="102.2">Ajouter au panier</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="panier" class="container">
+        <h1>Panier</h1>
+        <table id="panierTable">
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Quantité</th>
+              <th>Prix Unitaire</th>
+              <th>Prix Total</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Les produits seront insérés ici via JavaScript -->
+          </tbody>
+        </table>
+        <div class="total">
+          <p>Total du panier : <span id="totalPrix">0.00</span> $</p>
+        </div>
+        <button id="viderPanier">Vider le Panier</button>
+      </div>
+    <script src="script1.js"></script>
+</body>
+</html>
